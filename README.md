@@ -1,5 +1,7 @@
 [Test Task React](https://docs.google.com/document/d/1ll1ZVjwtbK1X7Lg0yS8i20jqYn_yjoXvIlt83hhMPR4/edit)
 
+**[Deploy Link](https://quiz-test-task-react.netlify.app/)**
+
 ### Quiz app
 
 Create a Quiz component, and use it in an AppComponent.
