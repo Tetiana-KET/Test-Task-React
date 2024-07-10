@@ -1,0 +1,126 @@
+:root {
+	--turquoise: rgba(27, 143, 145);
+	--button-hover: rgb(7, 112, 114);
+	--light-grey: rgb(197, 201, 211);
+	--dark-grey: rgb(97, 97, 98);
+	--white-color: rgb(255, 255, 255);
+	--correct-answer: rgb(10, 255, 51);
+	--incorrect-answer: rgb(232, 14, 14);
+}
+
+.quiz-container {
+	max-width: 1000px;
+	margin: auto;
+	background-color: var(--turquoise);
+	padding: 10px;
+}
+
+.quiz-wrap {
+	border-radius: 15px;
+	background-color: var(--white-color);
+	padding: 35px;
+	text-align: left;
+}
+
+.header {
+	color: var(--turquoise);
+	margin-bottom: 20px;
+}
+
+.header h2 {
+	line-height: 2.5;
+	border-bottom: 2px solid var(--light-grey);
+}
+
+.question-title {
+	margin-bottom: 35px;
+}
+
+.current-question-answers {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.answers-item {
+	background-color: var(--light-grey);
+	border: 2px solid transparent;
+	border-radius: 10px;
+	font-size: 22px;
+	padding: 20px;
+}
+
+.button-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 30px;
+}
+
+button {
+	width: 150px;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: var(--turquoise);
+	color: var(--white-color);
+}
+
+.footer {
+	display: flex;
+	gap: 20px;
+}
+
+.correct-answer-count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: var(--light-grey);
+	color: var(--white-color);
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.correct {
+	background-color: var(--correct-answer);
+}
+
+.incorrect {
+	background-color: var(--incorrect-answer);
+}
+
+button,
+.answers-item {
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.disabled,
+button[disabled] {
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
+button[disabled] {
+	opacity: 0.5;
+}
+
+@media (hover: hover) {
+	button:hover {
+		background-color: var(--button-hover);
+		box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 6px;
+	}
+
+	.answers-item:hover {
+		background-color: var(--dark-grey);
+		border: 2px solid var(--light-grey);
+		color: var(--white-color);
+	}
+}
