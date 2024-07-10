@@ -15,7 +15,7 @@
     "format:all": "npm run lint:fix && npm run prettier:fix",
     "validate:all": "npm run lint && npm run prettier && npm run types-check",
     "prepare": "husky",
-    "deploy": "npm run build && npx gh-pages -d dist -e class-components"
+    "deploy": "npm run build && npx gh-pages -d dist -e Test-Task-React"
   },
   "dependencies": {
     "react": "^18.3.1",
